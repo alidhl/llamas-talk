@@ -12,10 +12,10 @@ You will be given a set of messages to respond to. Keep your responses short"""
 
     def respond(self, message):
         self.messages += f"Opponent: {message}\n"
-        prompt = f"{self.instructions}\n\n{self.messages}".strip()
-        rprint("[green]" + prompt)
+        prompt = f"{self.instructions}\n\n{self.messages}\n\nBased on the pervious messages what is your response?".strip()
+        #rprint("[green]" + prompt)
         response = ollama.generate(model=self.model_name, prompt=prompt)['response']
-        self.messages += f"{self.persona_name}: {response}\n"
+        self.messages += f"You: {response}\n"
         return response
     
 
