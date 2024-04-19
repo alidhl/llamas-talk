@@ -27,7 +27,7 @@ You will be given last exchange of messages. Keep your responses short"""
     
 
 if __name__ == "__main__":
-    model_name = "llama2"
+    model_name = "llama3"
     objective = "Mario is better than Luigi."
     persona_name1 = "Mario Fanboy"
     persona_name2 = "Luigi Fanboy"
