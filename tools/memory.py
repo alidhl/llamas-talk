@@ -1,4 +1,3 @@
-"""This class will be used as an object and will act as a memory for every session"""
 class Memory:
     def __init__(self , k):
         self.messages = []
