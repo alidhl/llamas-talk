@@ -62,4 +62,4 @@ class Debate():
         for _ in range(num_turns):
             for name, chatbot in self.debaters:
                 message = chatbot.respond(message)
-                yield f"{name}: {message}"
+                yield f"{message}\n" , name

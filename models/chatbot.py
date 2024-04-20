@@ -1,4 +1,4 @@
-from tools.prompts import DEBATE_PROMPT
+from tools.prompts import DEBATE_PROMPT_OPENAI
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -8,7 +8,7 @@ from operator import itemgetter
 class Chatbot:
     def __init__(self, persona, objective):
         chat = ChatOpenAI()
-        system_prompt = DEBATE_PROMPT
+        system_prompt = DEBATE_PROMPT_OPENAI
         self.objective = objective
         self.persona = persona
         self.chat_history = Memory(1000)
