@@ -11,5 +11,4 @@ Here is the conversation so far:
 
 Based on the previous exchange, what is your response? do not include any prefix like "Chatbot:" or "You:". 
 
-Note: You can use the <DONE> command to end the conversation.
 """

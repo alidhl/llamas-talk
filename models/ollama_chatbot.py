@@ -2,7 +2,7 @@ import ollama
 from tools.memory import Memory
 from tools.prompts import DEBATE_PROMPT
 
-class LocalChatbot():
+class OllamaChatbot():
     def __init__(self, persona, objective, model_name="llama3"):
         self.model_name = model_name
         self.persona = persona
