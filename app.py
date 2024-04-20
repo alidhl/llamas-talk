@@ -75,7 +75,8 @@ for message in st.session_state.messages:
         st.write(message["content"])
 
 # Try to get the OpenAI API key from the environment variables usefull if run locally
-openai_api_key = os.getenv('OPENAI_API_KEY')
+if not openai_api_key:
+    openai_api_key = os.getenv('OPENAI_API_KEY')
 
 if st.button('Start Debate'):
     # If one of the debaters is using OpenAI API, check if the API key is provided
