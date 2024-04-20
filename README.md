@@ -49,5 +49,5 @@ https://github.com/alidhl/llamas-talk/assets/119793124/f586f482-2d10-454f-80a1-4
 ## Acknowledgments
 
 - [Langchain](https://langchain.com/) for online chatbot services.
-- [ollama](https://ollama.llamas.dev/) for local model support.
+- [ollama](https://ollama.com/) for local model support.
 - [Streamlit](https://streamlit.io/) for hosting and web interface design.
